@@ -41,14 +41,15 @@ export default function Descripcion({recetas}) {
     <>
         {!recetas.length ? (
         <div className='descripcion'>
-            <h1 className='titulo'>Recetas saludables</h1>
-            <p><span className='health'> Lorem ipsum dolor sit </span> amet consectetur adipisicing elit.
+            <h1 className='titulo'>HealthyRecipes</h1>
+            <p><span className='health'> Do you want healthy recipes? </span> This is your page
             <br />
-                Possimus praesentium<span className='health'> vel, qui ab  aperiam </span> quas dignissimos dolor
+            write the meal you want <span className='health'> we tell you </span>
             <br />
-                laborum inventore ratione adipisci incidunt, similique cupiditate,
+            what you need and its <span className='health'>nutritional content</span>
             <br />
-                eaque magnam aliquid <span className='health'> officiis </span> deleniti maiores? </p>
+            the steps to follow, and the portions
+            </p>
         </div>
         ): (
             <div className='recetas'>

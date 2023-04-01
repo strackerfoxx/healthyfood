@@ -94,6 +94,7 @@ header h1 {
 @media (max-width: 1024px) {
     .container{
         display: block;
+        /* padding-right: 5%; */
     }
 }
 .form{
@@ -163,7 +164,7 @@ header h1 {
 }
 .recetas{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     margin-top: 30%;
     gap: 1rem;
     margin-left: 2rem;
@@ -171,7 +172,7 @@ header h1 {
 }
 @media (min-width: 1920px){
     .recetas{
-        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     }
 }
 .recepe{
@@ -182,5 +183,9 @@ header h1 {
 .nutrimental{
     background-color: rgb(48, 48, 48);
     padding: 1rem;
-    margin: auto 30%;
+}
+@media (min-width: 768px) {
+    .nutrimental{
+        margin: auto 30%;
+    }
 }

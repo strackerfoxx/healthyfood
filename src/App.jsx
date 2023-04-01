@@ -29,7 +29,7 @@ export default function App() {
     <div>
         <div className='primary'>
             <div className='cuerpo'>
-                <h1 className='logo'><span className='health'>HEALTHY</span> Recipes</h1>
+                <h1 className='logo'><span className='health'>HEALTHY</span>Recipes</h1>
                 <div className='container'>
                   {isLoading ? <Spinner/> : <Descripcion recetas={recetas}/>}
                   <Form consulta={consulta} setPlatillo={setPlatillo} />
