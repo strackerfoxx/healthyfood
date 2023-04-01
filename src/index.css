@@ -1,0 +1,186 @@
+body {
+    font-size: 1.6rem;
+    font-family: "Lato", sans-serif;
+    background-color: rgb(27, 27, 27);
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.fijar {
+    overflow: hidden;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+
+header {
+    background-color: var(--azul);
+}
+
+header h1 {
+    padding: 3rem 0;
+    margin: 0;
+    color: var(--blanco);
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+.alerta {
+    padding: 2rem 5rem;
+    max-width: 60rem;
+    margin: 2rem auto 2rem auto;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.alerta.error {
+    background-color: rgb(246, 168, 168);
+    border-left: 5px solid #b91c1c;
+    color: #b91c1c;
+}
+.alerta.success {
+    background-color: rgb(181, 246, 168);
+    border-left: 5px solid #36aa13;
+    color: #39b91c;
+}
+.cuerpo{
+    background-image: url("./img/pexels-flo-maderebner-745988.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0 3%;
+    padding: auto 5rem;
+    border-radius: 2rem;
+    border: 2rem;
+    padding-bottom: 13%;
+    height: 90%;
+    box-shadow: 8px 10px 10px rgba(255, 255, 255, 0.08);
+}
+@media (max-height: 1080px) {
+    .cuerpo .descripcion{
+        padding-bottom: 1%;
+    }
+}
+.descripcion{
+    padding-bottom: 20%;
+}
+.health{
+    color: rgb(0, 174, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo{
+    padding: 2rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    text-align: center;
+}
+@media (max-width: 1024px) {
+    .container{
+        display: block;
+    }
+}
+.form{
+    text-align: center;
+}
+.text{
+    width: 90%;
+    padding: 2rem;
+    margin-top: 19%; 
+    background-color: #484848;
+    color: whitesmoke;
+    border: 0;
+}
+.boton{
+    padding: 2rem;
+    width: 90%;
+    border: 0;
+    margin-top: 10%;
+    background-color: #39b91c;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition-property: background-color;
+}
+.boton:hover{
+    background-color: #206b0f;
+    transition-duration: 300ms;
+}
+.descripcion p{
+    font-size: 2.2rem;
+    margin-top: 25%;
+    font-weight: bold;
+}
+.modal{
+    background-color: rgb(77, 77, 77);
+    text-align: center;
+    color: whitesmoke;
+    padding: 2rem;
+}
+.x{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+}
+.x:hover{
+    background-color: rgb(176, 0, 0);
+    transition-duration: 300ms;
+}
+.modal-header {
+    display: grid;
+    background-color: rgb(77, 77, 77);
+    padding: 10px;
+    color: #36aa13;
+}
+@media (min-width: 425px) {
+    .modal-header{
+        grid-template-columns: 100fr 1fr;
+    }
+}
+.recetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    margin-top: 30%;
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+@media (min-width: 1920px){
+    .recetas{
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    }
+}
+.recepe{
+    background-color: rgb(77, 77, 77);
+    text-align: center;
+    padding: 1rem;
+}
+.nutrimental{
+    background-color: rgb(48, 48, 48);
+    padding: 1rem;
+    margin: auto 30%;
+}
