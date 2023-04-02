@@ -65,7 +65,7 @@ export default function Descripcion({recetas}) {
                 <ReactModal isOpen={handleModal} onRequestClose={handleModal} style={customStyles}>
                     <div className='modal'>
                     <div className="modal-header">
-                        <h1>{recipe?.title}</h1>
+                        <h2 className='health'>{recipe?.title}</h2>
                         <button className='x' onClick={handleModal}>X</button>
                     </div>
                     <h2 className='health'>Ingredientes</h2>
